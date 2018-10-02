@@ -92,7 +92,23 @@ $(document).ready(function(){
         }
       }); //end loop arrayDoctors
     }; //end of the control flow to display doctors profiles
-    
+    $(".book-profile").click(function(){
+      $(".doctor-profile").hide();
+      $(this).closest(".doctor-profile").show();
+      $(".book").show();
+    })
+    $(".book-form").submit(function(event){
+      event.preventDefault();
+      swal({
+        title: "Book Confirmed!",
+        text: "Thanks for your booking! Your request is being processed!",
+        icon: "success",
+        confirmButtonText: "OK"
+      }).then(function () {
+        window.location.href = "index.html";
+      });  //SweetAlert to confirm booking and redirected to HomePage
+
+    }); //end submit book-form
 
   }); //end submit-search
 }); //end ready
