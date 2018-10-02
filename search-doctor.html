@@ -34,10 +34,43 @@
           <option value="cardiologist">Cardiologist</option>
         </select>
         <!-- end select specialty -->
-
-
+        <button type="submit" name="button">Search</button>
+        <!-- add a search icon to Search button -->
       </form>
       <!-- end form search-doctor -->
+      <div class="display-profiles">
+
+      </div>
+
+      <div class="book">
+        <form class="book-form">
+          <div class="form-group">
+            <label for="patient-name">Name:</label>
+            <input type="text" name="patient-name" value="">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" value="">
+          </div>
+          <div class="form-group">
+            <label for="details">Details</label> <br>
+            <textarea name="details" rows="5" cols="40" placeholder="Tell me why you want to consult..."></textarea>
+            <label for="date">Date:</label>
+            <input type="date" name="date" value="">
+            <!-- how to display a full calendar instead of just a dropdown -->
+            <!-- how to disable some days on input date -->
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="" placeholder="email@gmail.com">
+            <label for="password">Password:</label>
+            <input type="password" name="password" value="">
+            <!-- check the level of security of the password if time allows -->
+          </div>
+          <button type="submit" name="button">Book!</button>
+
+
+        </form>
+
+      </div>
 
 
     </div>
