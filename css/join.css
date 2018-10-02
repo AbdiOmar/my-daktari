@@ -1,0 +1,61 @@
+/* JOIN CSS */
+
+@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:700");
+
+/* Header CSS */
+
+.jumbotron-fluid {
+  background-color: #b6eae1;
+  padding: 14px;
+  width: 100%;
+}
+
+.header {
+  font-family: "PT Sans", sans-serif;
+  margin-left: 100px;
+}
+
+#header-part1 {
+  color: 005884;
+}
+
+#header-part2 {
+  color: #003366;
+  font-size: 1em;
+}
+
+#header-part3 {
+  margin-left: 1000px;
+  padding-bottom: 0px;
+}
+
+#header-part3 a {
+  color: #000000;
+}
+
+.nav-links {
+  padding-left: 150px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav-links li {
+  float: left;
+  border-left: solid 1px black;
+}
+
+.nav-links li:first-child {
+  border: 0px;
+}
+
+li a {
+  display: inline;
+  color: black;
+  padding-right: 20px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "Bitter", sans-serif;
+}
