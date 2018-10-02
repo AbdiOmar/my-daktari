@@ -1,0 +1,32 @@
+html {
+    background: -webkit-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+    background: -moz-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+    background: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+}
+
+body {
+    text-align: center;
+    background-color: -webkit-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+}
+h6 {
+
+}
+
+.btn {
+    opacity: 0.5;
+}
+.btn :hover {
+    opacity: 1;
+}
+
+.intro h1 {
+    width: 100%;
+
+}
+.footer {
+    width: 100%;
+}
+.footer a {
+    float: left;
+
+}
