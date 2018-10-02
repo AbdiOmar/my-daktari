@@ -3,7 +3,9 @@ html {
 
 body {
     text-align: center;
-    background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+    background: #b6eae1 10%;
+    background-image: url("IMAGE_URL"); /* fallback */
+    background-image: linear-gradient(to right, #b6eae1 10%, #D2FBAD 200%); /* W3C */
 }
 h6 {
 
@@ -27,3 +29,5 @@ h6 {
     float: left;
 
 }
+
+linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
