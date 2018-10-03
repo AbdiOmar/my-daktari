@@ -3,42 +3,100 @@ html {
 
 body {
     text-align: center;
-    background: #b6eae1 10%;
     background-image: url("../images/background.png"); /* fallback */
-    background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 260%); /* W3C */
+    background: linear-gradient(#b6eae1 10%, #D2FBAD 260%); /*#b6eae1 10%;*/
 }
+
 h6 {
 
 }
 #carousel {
-    margin: 20px;
+    margin-top: 10px;
     padding: 20px;
+    padding-top: -10px;
+    z-index: 3;
 }
 #carousel img {
-    width:100%;
-}
-.carousel-item {
-    height: 450px;
-    overflow: hidden;
     width: 100%;
 }
+
+em {
+    font-weight: lighter;
+}
+.slide-info {
+    position: absolute;
+    bottom: -100px;
+    right: -20px ;
+    left: -20px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-align: center;
+    opacity: 0.5;
+    background: rgba(0,0,0,0.4);
+    background-color: #000\9;
+    border: 1px solid #16a085;
+    padding:40px;
+    margin: 100px;
+
+
+}
+.slide-info h5, p {
+    opacity: 1;
+    font-size: 35px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
 .btn {
     opacity: 0.5;
 }
 .btn :hover {
     opacity: 1;
 }
+.searchbtn {
+}
 
 .intro h1 {
     width: 100%;
-
-}
-.footer {
-    width: 100%;
-}
-.footer a {
-    float: left;
-
 }
 
-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
+.optdocpat :hover {
+    opacity: 0.5
+}
+.optdocpat img {
+    height: 200px;
+    border-radius: 20%;
+}
+
+
+@media only screen and (max-width: 772px) {
+    body {
+        background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
+    }
+    .slide-info p {
+        display:none;
+    }
+    .slide-info {
+        height: 40%;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
+    }
+    .slide-info p {
+        display:none;
+    }
+    .slide-info {
+        height: 50%;
+        padding: 0.3%;
+        font-size: 30%;
+        overflow: hide;
+
+    }
+}
+
+470

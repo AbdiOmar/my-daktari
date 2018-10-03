@@ -97,6 +97,7 @@ hr {
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
+  color: rgb(190, 234, 208)
 }
 pre {
   overflow: auto;
@@ -4958,9 +4959,12 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #c0e2d3;
+  background-color: rgba(179, 224, 215, 0.5); /* nyake edit*/
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
