@@ -5,12 +5,14 @@ body {
     text-align: center;
     background: linear-gradient(#b6eae1 10%, #D2FBAD 260%); /*#b6eae1 10%;*/
 }
-.dash {
-
+.slogan{
+    margin-bottom: -120px;
 }
-h6 {
-
+.slogan img {
+    height: 100px;
+    shadow: 2px 1px #D2FBAD;
 }
+
 .intro {
   margin-top: -20px;
   padding-top: 0px;
@@ -61,10 +63,15 @@ em {
 .searchbtn {
 }
 
-.intro h1 {
+h1 {
+    margin-top: 40px;
     width: 100%;
     text-shadow: 2px 1px #D2FBAD;
-    background-image: linear-gradient(#b6eae1 10%, #D2FBAD 260%)
+    background-image: linear-gradient(#b6eae1 10%, #D2FBAD 260%);
+}
+ #story h1,#faq h1, #contact h1 {
+    text-shadow: none;
+    background-image: linear-gradient(#D2FBAD 10%, #b6eae1 260%);
 }
 .optdocpat {
     margin-top: -100px;
