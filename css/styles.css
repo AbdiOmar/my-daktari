@@ -1,0 +1,127 @@
+html {
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(#b6eae1 10%, #D2FBAD 260%); /*#b6eae1 10%;*/
+}
+.slogan{
+    margin-bottom: -120px;
+}
+.slogan img {
+    height: 100px;
+    shadow: 2px 1px #D2FBAD;
+}
+
+.intro {
+  margin-top: -20px;
+  padding-top: 0px;
+}
+#carousel {
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: -10px;
+    z-index: 3;
+}
+#carousel img {
+    width: 100%;
+}
+
+em {
+    font-weight: bold;
+}
+.slide-info {
+    position: absolute;
+    bottom: -100px;
+    right: -20px ;
+    left: -20px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    opacity: 0.5;
+    background: rgba(0,0,0,0.4);
+    background-color: #000\9;
+    border: 1px solid #16a085;
+    padding:40px;
+    margin: 100px;
+
+
+}
+.slide-info h5, p {
+    opacity: 1;
+    font-size: 35px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    opacity: 0.5;
+}
+.btn :hover {
+    opacity: 1;
+}
+.searchbtn {
+}
+
+h1 {
+    margin-top: 40px;
+    width: 100%;
+    text-shadow: 2px 1px #D2FBAD;
+    background-image: linear-gradient(#b6eae1 10%, #D2FBAD 260%);
+}
+ #story h1,#faq h1, #contact h1 {
+    text-shadow: none;
+    background-image: linear-gradient(#D2FBAD 10%, #b6eae1 260%);
+}
+.optdocpat {
+    margin-top: -100px;
+}
+.optdocpat {
+    padding-top: -10px;
+}
+.opt :hover{
+    opacity: 0.5
+}
+.optdocpat img {
+    height: 200px;
+    border-radius: 20%;
+    padding-left: 10px;
+}
+.optdocpat img, p, h1 {
+    padding: 10px;
+}
+label {
+    font-size: 30px;
+}
+.about p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 772px) {
+    body {
+        background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
+    }
+    .slide-info p {
+        display:none;
+    }
+    .slide-info {
+        height: 40%;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%)
+    }
+    .slide-info p {
+        display:none;
+    }
+    .slide-info {
+        height: 50%;
+        padding: 0.3%;
+        font-size: 30%;
+        overflow: hide;
+
+    }
+}
