@@ -49,14 +49,24 @@
           <div class="form-group">
             <label for="patient-name">Name:</label>
             <input type="text" name="patient-name" value="">
+            <label for="patient-age">Age:</label>
+            <input type="number" name="patient-age" value="">
             <label for="subject">Subject:</label>
             <input type="text" name="subject" value="">
           </div>
           <div class="form-group">
+            <input type="radio" name="male" value="M">
+            <label for="male">Male</label>
+            <input type="radio" name="female" value="F">
+            <label for="female">Female</label>
+          </div>
+          <div class="form-group">
             <label for="details">Details</label> <br>
-            <textarea name="details" rows="5" cols="40" placeholder="Tell me why you want to consult..."></textarea>
+            <textarea name="details" rows="5" cols="40" placeholder="Tell me why you want to consult..."></textarea> <br>
             <label for="date">Date:</label>
             <input type="date" name="date" value="">
+            <select class="book-hour">
+            </select>
             <!-- how to display a full calendar instead of just a dropdown -->
             <!-- how to disable some days on input date -->
           </div>
@@ -73,6 +83,8 @@
         </form>
 
       </div>   <!-- end div book -->
+
+
 
 
     </div>

@@ -7,6 +7,7 @@ $(document).ready(function(){
     var selectedLocation = $(".select-location").val();
     var selectedSpecialty = $(".select-specialty").val();
 
+    $(".doctor-profile").remove();
     $(".display-profiles").show();
 
     if (selectedSpecialty == null && selectedLocation == null) {
@@ -100,7 +101,7 @@ $(document).ready(function(){
     $(".book-form").submit(function(event){
       event.preventDefault();
       swal({
-        title: "Book Confirmed!",
+        title: "Booking Confirmed!",
         text: "Thanks for your booking! Your request is being processed!",
         icon: "success",
         confirmButtonText: "OK"
@@ -112,3 +113,31 @@ $(document).ready(function(){
 
   }); //end submit-search
 }); //end ready
+
+
+
+
+//script for hours and disable some of them
+var selection = "";
+var i = 0;
+for(var i = 8; i < 19; i++)
+{
+    var j = zeroFill(i, 2);
+        if (j%2 != 0) {
+          selection += "<option disabled value='"+ j +"00'>"+ j + ":00" + "</option>";
+              selection += "<option disabled value='"+ j +"30'>"+ j + ":30" + "</option>";
+        } else {
+          selection += "<option value='"+ j +"00'>"+ j + ":00" + "</option>";
+              selection += "<option value='"+ j +"30'>"+ j + ":30" + "</option>";
+        }
+}
+$(".book-hour").html(selection);
+function zeroFill( number, width )
+{
+  width -= number.toString().length;
+  if ( width > 0 )
+  {
+    return new Array( width + (/\./.test( number ) ? 2 : 1) ).join( '0' ) + number;
+  }
+  return number + ""; // always return a string
+}
