@@ -3,12 +3,17 @@ html {
 
 body {
     text-align: center;
-    background-image: url("../images/background.png"); /* fallback */
     background: linear-gradient(#b6eae1 10%, #D2FBAD 260%); /*#b6eae1 10%;*/
 }
+.dash {
 
+}
 h6 {
 
+}
+.intro {
+  margin-top: -20px;
+  padding-top: 0px;
 }
 #carousel {
     margin-top: 10px;
@@ -21,7 +26,7 @@ h6 {
 }
 
 em {
-    font-weight: lighter;
+    font-weight: bold;
 }
 .slide-info {
     position: absolute;
@@ -30,7 +35,6 @@ em {
     left: -20px;
     color: white;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    text-align: center;
     opacity: 0.5;
     background: rgba(0,0,0,0.4);
     background-color: #000\9;
@@ -59,16 +63,32 @@ em {
 
 .intro h1 {
     width: 100%;
+    text-shadow: 2px 1px #D2FBAD;
+    background-image: linear-gradient(#b6eae1 10%, #D2FBAD 260%)
 }
-
-.optdocpat :hover {
+.optdocpat {
+    margin-top: -100px;
+}
+.optdocpat {
+    padding-top: -10px;
+}
+.opt :hover{
     opacity: 0.5
 }
 .optdocpat img {
     height: 200px;
     border-radius: 20%;
+    padding-left: 10px;
 }
-
+.optdocpat img, p, h1 {
+    padding: 10px;
+}
+label {
+    font-size: 30px;
+}
+.about p {
+    text-align: center;
+}
 
 @media only screen and (max-width: 772px) {
     body {
@@ -98,5 +118,3 @@ em {
 
     }
 }
-
-470
