@@ -52,6 +52,11 @@
 
 /* Navigation */
 
+.navigation{
+  overflow: hidden;
+  height: -8%;
+}
+
 .nav-links {
   padding-left: 150px;
   text-decoration: none;
