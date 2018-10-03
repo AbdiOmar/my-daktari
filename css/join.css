@@ -233,9 +233,14 @@ a { text-decoration: none; color: #EC5C93; }
   opacity: 1;
 }
 
-/* COLORS */
+/* PROGRASS BAR COLORS */
 .azure   { background: #38B1CC; }
 .emerald { background: #2CB299; }
 .violet  { background: #8E5D9F; }
 .yellow  { background: #EFC32F; }
 .red     { background: #E44C41; }
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 2%;
+}
