@@ -18,43 +18,55 @@
       <form class="search-doctor">
         <select class="select-location" name="location">
           <option value="" disabled selected>Select a location:</option>
-          <option value="cbd">CBD</option>
-          <option value="westlands">Westlands</option>
-          <option value="embakasi">Embakasi</option>
-          <option value="kibera">Kibera</option>
-          <option value="dagoretti">Dagoretti</option>
+          <option value="CBD">CBD</option>
+          <option value="Westlands">Westlands</option>
+          <option value="Embakasi">Embakasi</option>
+          <option value="Kibra">Kibra</option>
+          <option value="Dagoretti">Dagoretti</option>
         </select>
         <!-- end select location -->
         <select class="select-specialty" name="specialty">
           <option value="" disabled selected>Select a specialty:</option>
-          <option value="cancerologist">Cancerologist</option>
-          <option value="gynecologist">Gynecologist</option>
-          <option value="dentist">Dentist</option>
-          <option value="ophtalmologist">Ophtalmologist</option>
-          <option value="cardiologist">Cardiologist</option>
+          <option value="Paeditrician">Paeditrician</option>
+          <option value="Gynaecologist">Gynaecologist</option>
+          <option value="Dentist">Dentist</option>
+          <option value="Ophtalmologist">Ophtalmologist</option>
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="General Practitioner">General Practitioner</option>
         </select>
         <!-- end select specialty -->
         <button type="submit" name="button">Search</button>
         <!-- add a search icon to Search button -->
       </form>
       <!-- end form search-doctor -->
-      <div class="display-profiles">
 
-      </div>
+      <div class="row display-profiles">
+
+      </div> <!-- this div is for appending doctors profiles matching the search -->
 
       <div class="book">
         <form class="book-form">
           <div class="form-group">
             <label for="patient-name">Name:</label>
             <input type="text" name="patient-name" value="">
+            <label for="patient-age">Age:</label>
+            <input type="number" name="patient-age" value="">
             <label for="subject">Subject:</label>
             <input type="text" name="subject" value="">
           </div>
           <div class="form-group">
+            <input type="radio" name="male" value="M">
+            <label for="male">Male</label>
+            <input type="radio" name="female" value="F">
+            <label for="female">Female</label>
+          </div>
+          <div class="form-group">
             <label for="details">Details</label> <br>
-            <textarea name="details" rows="5" cols="40" placeholder="Tell me why you want to consult..."></textarea>
+            <textarea name="details" rows="5" cols="40" placeholder="Tell me why you want to consult..."></textarea> <br>
             <label for="date">Date:</label>
             <input type="date" name="date" value="">
+            <select class="book-hour">
+            </select>
             <!-- how to display a full calendar instead of just a dropdown -->
             <!-- how to disable some days on input date -->
           </div>
@@ -70,7 +82,9 @@
 
         </form>
 
-      </div>
+      </div>   <!-- end div book -->
+
+
 
 
     </div>
@@ -81,6 +95,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/doctors-database.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
