@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Bitter");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 
 /* Header CSS */
 
@@ -16,30 +19,41 @@
   margin-left: 100px;
 }
 
+.header-logo-name {
+  display: inline-block;
+  font-size: 2em;
+}
 #header-part1 {
-  color: 005884;
+  color: #005884;
 }
 
 #header-part2 {
   color: #003366;
-  font-size: 1em;
 }
 
 #header-part3 {
-  margin-left: 1000px;
-  padding-bottom: 0px;
+  display: inline-block;
+  margin-left: 67%;
 }
 
 #header-part3 a {
   color: #000000;
+  font-size: 0.8em;
+}
+
+/* MAIN PAGE CSS */
+
+/* Navigation */
+
+.navigation {
+  /* background-color: rgb(241, 241, 65); */
 }
 
 .nav-links {
   padding-left: 150px;
   text-decoration: none;
   list-style-type: none;
-  margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .nav-links li {
@@ -51,11 +65,76 @@
   border: 0px;
 }
 
-li a {
-  display: inline;
+.nav-links li a {
+  display: inline-block;
   color: black;
   padding-right: 20px;
   text-decoration: none;
   margin-left: 20px;
   font-family: "Bitter", sans-serif;
 }
+
+.doctor-buttons {
+  color: #003366;
+  border: 1px solid #022a52;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  padding: 0.6em;
+  text-decoration: none;
+  font-family: "Bitter", sans-serif;
+  background: linear-gradient(to right, #022a52 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.doctor-buttons:hover {
+  background-position: left bottom;
+}
+
+#list-practice {
+  margin-left: 30%;
+  color: black;
+  transition: all 0.6s ease-out;
+}
+
+#list-practice:hover {
+  color: white;
+}
+
+/* What is myDaktari CSS */
+
+.mydaktari {
+  position: absolute;
+  width: 100%;
+  height: 536px;
+  padding-left: 26%;
+  padding-top: 8%;
+}
+
+.mydaktari h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  line-height: 60px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+.mydaktari p{
+  font-family: 'Karla', sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 12px;
+  padding-bottom: 2px;
+  padding-left: 60px;
+}
+
+#main-mydaktari{
+  margin-left: 27%;
+}
+
+#main-mydaktari:hover {
+  color: white;
+}
+
