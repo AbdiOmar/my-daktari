@@ -4966,7 +4966,7 @@ a.badge:focus {
   background: linear-gradient(#b6eae1 10%, #D2FBAD 260%, #b6eae1 80%); /* nyake edit*/
 
 }
-.header, .optques {
+.header, .optques  {
   background: linear-gradient(#D2FBAD 10%, #b6eae1  260%); /* nyake edit*/
 }
 .jumbotron h1,
